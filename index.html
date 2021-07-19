@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Ecommerce | A Shopping Landing Page</title>
+    <link rel="stylesheet" href="styles/custom-css.css">
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/d225eecf94.js" crossorigin="anonymous"></script>
     <!-- bootstrape css  -->
@@ -15,9 +16,9 @@
 
 <body>
     <!-- Header Start  -->
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning container fixed-top">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
                 </a>
@@ -40,10 +41,13 @@
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
                     </ul>
@@ -51,7 +55,7 @@
             </div>
         </nav>
         <!-- carousel / images slide -->
-        <section class="container my-5 px-0">
+        <section class="container my-5 px-0 style">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
@@ -113,6 +117,7 @@
     <!-- Header End  -->
     <!-- Main Start -->
     <main>
+        <!-- Category Section  -->
         <section class="container my-5">
             <div class="row g-5">
                 <div class="col-12 col-md-6  col-lg-4">
@@ -136,7 +141,7 @@
             </div>
         </section>
         <!-- Shoes Section  -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
                 <div class="col">
@@ -184,7 +189,7 @@
             </div>
         </section>
         <!-- Backpack Section  -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
                 <div class="col">
@@ -231,11 +236,23 @@
                 </div>
             </div>
         </section>
+        <!-- Subcribe Section  -->
+        <section id="subscribe" class="container my-5 bg-info d-flex justify-content-center align-items-center"
+            style="height: 300px; ">
+            <div>
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p class="text-muted">Get updates on sales, specials and more</p>
+                <input class="text-muted rounded border-0 shadow" type="email" placeholder="Enter Email ID">
+                <br>
+                <button class="btn btn-warning text-white">Submit</button>
+            </div>
+        </section>
     </main>
     <!-- Main End  -->
     <!-- Footer Start  -->
     <footer>
-
+        <p class="text-center text-muted"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
+        </p>
     </footer>
     <!-- Footer End  -->
 
